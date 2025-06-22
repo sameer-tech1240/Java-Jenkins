@@ -1,0 +1,24 @@
+Download and fully setup...
+
+step 1 : go to the browser and search jenkins download click on generic war file for download jenkins .
+step 2 : go to the file explorer and open terminal where jenkins.war file located 
+step 3 : run jenkins use command "java -jar .\jenkins.war"
+step 4 : go to the browser and search url with port and enter the password 
+step 5 : select suggested plugins and install it 
+step 6 : create first admin user and click save and continue 
+step 7 : go to the manage jenkins and plugins download plugin for maven , deploy to container , nodejs if use 
+step 8 : go to the manage jenkins click tool and add jdk  with bin path and add nodejs and maven 
+
+step 1 : click on new item enter the new project name and select freestyle project and press ok 
+step 2 : go to the down in build steps section select "excute windows build command" and write command : echo "Hello from jenkins project..." and click save .
+step 3 : create java class and push into git 
+
+new project creation for run java file
+step 1 : lick on new item enter the new project name and select freestyle project and press ok 
+step 2 : in Source Code Management section select git option and paste your git url and set triggers Poll SCM * * * * * this means load every minut when poll 
+step3 : add build steps section select "excute windows build command" and write command for run java file javac classname.java and java classname click apply and save 
+step 4 : if you run node file them create one node file and add command in jenkins node filename.js and save
+
+Steps for deploy with jenkins
+step 1 : add discription select git add url in Triggers section select poll SCM enter ***** select environment Delete workspace before build starts and select build step maven goals clean install then apply and save
+after creating project just build it if success then go to the configure and add post build section war file location *target/*.war* and context path *JavaAppForManualDeploy* add tomcat 
