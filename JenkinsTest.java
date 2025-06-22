@@ -5,6 +5,7 @@ public static void main(String [] args){
 System.out.println("This is java program...");
 System.out.println("Hello jenkins user...");
 System.out.println("output from java program...");
+System.out.println("2nd commit...");
 System.out.println(new Date());
 }
 }
